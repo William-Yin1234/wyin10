@@ -1,1 +1,2 @@
-# wyin10
+# workshop of William Yin
+### SoftDev 2020-2021
