@@ -3,7 +3,8 @@
 # K05 -- Random Team Member Selector
 # 2020-09-05
 
-# We interpreted the assignment as taking an input from the user representing what team they'd like to select a member from, and then outputting a random member from that team.
+# We interpreted the assignment as taking an input from the user representing what team they'd like to select a member from,
+# and then outputting a random member from that team.
 
 from random import randint as r
 
