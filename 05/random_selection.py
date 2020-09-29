@@ -1,10 +1,9 @@
-# Ethan Shenker, Alvin Wu, William Yin
+# Ethan Shenker, Alvin Wu, Willian Yin
 # SoftDev
 # K05 -- Random Team Member Selector
 # 2020-09-05
-
-# We interpreted the assignment as taking an input from the user representing what team they'd like to select a member from,
-# and then outputting a random member from that team.
+# The approach we chose for the team that the member was being selected from is that the user should specifiy which
+# team they're looking to receive a member from.
 
 from random import randint as r
 
@@ -20,7 +19,9 @@ def get_team_name(dic: dict) -> str:
         "Please enter the name of the team you'd like to select a member from: ").lower()
     while team_name not in dic:  # ensures team name provided exists
         # ensures we don't encounter a keyError
-        team_name = input("Please enter a valid team name: ").lower()
+        team_name = input(
+            "Please enter a valid team name. \nAvailable options include orpheus, rex, and endymion: ").lower()
+
     return team_name
 
 
