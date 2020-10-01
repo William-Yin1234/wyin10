@@ -38,7 +38,4 @@ def main():
     # F-strings allow us to put Python in-line in the string.
     print(f"Team member {team_member} chosen from team {team_name}.")
 
-
-# Only runs the main function if this is the main modulde.
-if __name__ == "__main__":
-    main()
+main()
