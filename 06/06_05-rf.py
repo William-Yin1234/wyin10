@@ -1,7 +1,7 @@
-# Team WAK: William Yin, Anya Zorin, Kelly Huang
+# Team WAK -- William Yin, Anya Zorin, Kelly Huang
 # SoftDev
-# K05 -- Random Team Member Selector (Edited to include group suggestions)
-# 2020-09-30
+# K06 -- Learnination Through Amalgamation
+# 2020-10-01
 # The approach we chose for the team that the member was being selected from is that the user should specifiy which
 # team they're looking to receive a member from.
 
