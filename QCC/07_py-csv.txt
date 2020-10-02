@@ -1,0 +1,3 @@
+Q: Were we allowed to use Python's csv module?
+Q: How many comments are too many? Too little?
+Q: Was 07_py-csv supposed to be the folder name or the file name?
