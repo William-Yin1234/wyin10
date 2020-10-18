@@ -28,8 +28,12 @@ K13: Template for Success
         <tbody>
             {% for occ in occupations %}
                 <tr>
-                    <td>{{ occ }}</td>
-                    <td><a href={{ occupations[occ]['link'] }}>Click here to learn more</a></td>
+                    <td>{{ occ.replace('"', '') }}</td>
+                    <td>
+                        {% if occupations[occ]['link'] %}
+                            <a href={{ occupations[occ]['link'] }}>Click here to learn more</a>
+                        {% endif %}
+                    </td>
                     <td>{{ occupations[occ]['percentage'] }}</td>
                 </tr>
             {% endfor %}
