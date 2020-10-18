@@ -1,0 +1,37 @@
+<!--
+Team Awesome: William Yin, Liam Kronman, Jason Chan
+SoftDev
+K13: Template for Success
+2020-10-18
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You got {{ occupation }}!</title>
+</head>
+<body>
+    <h1>K13 -- Template for Success</h1>
+    <h2>Team Awesome -- Jason Chan, Liam Kronman, William Yin</h2>
+    <h4>Below is an occupation chosen at random weighted by what percentage of the U.S. workforce it comprises.
+        This information comes from a CSV file that we have displayed in the table underneath the chosen occupation.</h4>
+    <p>Your chosen occupation is {{ occupation }}.</p>
+    <table border="1">
+        <thead>
+            <tr>
+                {% for header in headers %}
+                    <th>{{ header }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for occ in occupations %}
+                <tr>
+                    <td>{{ occ }}</td>
+                    <td><a href={{ occupations[occ]['link'] }}>Click here to learn more</a></td>
+                    <td>{{ occupations[occ]['percentage'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+</html>

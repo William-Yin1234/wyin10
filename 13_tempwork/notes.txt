@@ -1,0 +1,19 @@
+Team Awesome -- William Yin, Liam Kronman, Jason Chan
+SoftDev
+K13 -- Template for Success
+2020-10-18
+
+
+You can use Python functions in Jinja templates. For example, if the variable a contains the string "HELLO", putting {{ a.lower() }} in the Jinja template will display it as "hello".
+
+Must have separation between you and the code you write.
+
+The first argument to Python's open function is the path to the file you want to open. The path can be either relative or absolute.
+
+Other coders can often spot bugs better than the author.
+
+Many successful software firms use the egoless programming system and want to keep it secret.
+
+People that write code with the expectation that others will read it tend to be more effective and organized programmers.
+
+Authors tend to have biased opinions on their own code.
