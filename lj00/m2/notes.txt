@@ -1,0 +1,45 @@
+Team Awesome -- Liam Kronman, Jason Chan, William Yin
+SoftDev
+LJ00 -- Le Voyage de Learnination avec Mongo, Première Phase
+2020-10-28
+
+JSON stands for Javascript Standard Object Notation
+starts and ends with curly braces
+separate key and value with colon
+separate key value pair with comma
+keys must be surrounded by ""
+keys are also fields
+JSON is friendly readable familiar, but text based, space consuming, limited
+BSON is Binary JSON
+BSON bridges the gap between representation and JSON, for speed, space flexibility, and high performance
+both has UFT-8 encoding, basic data support, but BSON supports more types of data
+stores data in BSON, internally and over network, but can store and retrieve JSON
+export in BSON unless u need to be able to read it later, otherwise JSON
+mongodump --uri "<Atlas Cluster URI>"
+exports in BSON
+mongoexport --uri "<atlas cluster uri>"
+            --collection="<collection name>"
+	    --out=<filename>.json
+exports in JSON
+URI is Uniform Resource Identifier, basically the link used to connect
+srv establishes a secure connection between an application and a MongoDB instance, following that should be username;password
+All srvs are URIs, but not all URIs are srvs (srv more specific, URI more general)
+atlas cluster uris are an example of an srv
+mongorestore --uri
+             --drop dump
+imports data in BSON dump
+mongoimport --uri
+	    --drop=<filename>.json
+imports in JSON
+can also include --collection <collection name> to specify name of the collection the JSON will be saved to.
+namespace is the database name and collection name combined
+you can use key-value pairs to narrow the search results (can use multiple)
+db.trips.find({"birth year": 1961, "start station name": Howard St & Centre St})
+.find() searches for documents containing the arguments which are key-value pairs
+.count() returns the number of documents that are in a set of documents
+.pretty() prints the documents in a readable format
+show dbs - equivalent to ls in bash shell terminal, shows a list of databases in a cluster
+use <database name> - equivalent to cd in bash shell, enters into a database in that directory
+it iterates through query results
+cursor is a pointer to a set of querys
+pointer is the address of that particular document
