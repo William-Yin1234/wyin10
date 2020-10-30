@@ -3,6 +3,20 @@
 # K07 -- StI/O: Divine your Destiny!
 # 2020-10-01
 
+"""
+The variable counter will be accumulated by adding the percentages to it
+until it is greater than or equal to the value in num, at which point the
+chosen occupation is the one whose percentage pushed counter above num.
+This creates intervals for each occupation where the length of each
+interval is equal to that occupation's percentage.
+For example, "Computer and Mathematical" have a percentage of 2.7, and
+"Management" and "Business and Financial operations" have a percentage of
+6.1 and 5 respectively. This means for Computer and Mathematical to be
+chosen, a number on the interval (11.1, 13.8] must be chosen. Since each
+number on the interval [0, occupation_dict['Total']) has an equal chance
+of being picked, this gives Computer and Mathematical a 2.7% chance of
+being picked.
+"""
 
 def build_dict(file_name):
     """
@@ -41,18 +55,6 @@ def select_occupation(occupation_dict):
     # must be on the interval [0, occupation_dict['Total']).
     num = random() * occupation_dict['Total']
 
-    # The variable counter will be accumulated by adding the percentages to it
-    # until it is greater than or equal to the value in num, at which point the
-    # chosen occupation is the one whose percentage pushed counter above num.
-    # This creates intervals for each occupation where the length of each
-    # interval is equal to that occupation's percentage.
-    # For example, "Computer and Mathematical" have a percentage of 2.7, and
-    # "Management" and "Business and Financial operations" have a percentage of
-    # 6.1 and 5 respectively. This means for Computer and Mathematical to be
-    # chosen, a number on the interval (11.1, 13.8] must be chosen. Since each
-    # number on the interval [0, occupation_dict['Total']) has an equal chance
-    # of being picked, this gives Computer and Mathematical a 2.7% chance of
-    # being picked
     counter = 0
     # Converts each key-value pair in occupation_dict to a tuple where name is
     # the first value and percentage is the second.
