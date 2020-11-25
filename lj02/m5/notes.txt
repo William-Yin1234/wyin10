@@ -1,0 +1,33 @@
+Jason Chan, William Yin, Liam Kronman
+SoftDev
+LJ02 -- MongoDB Chapter 5
+2020-11-22
+
+Aggregation Framework (simplest form) - another way to query data in MongoDB
+Ex: db.listingsAndReviews.aggregate([{“$match”: { “amenities”: Wifi” }}, { “$project”: {“price”: 1, “address”: 1, “_id”: 0 }}]) → first, “$match” filters out all “amenities” with “Wifi”. then, “$project” filters out all fields except “price” and “address” in every document.
+Aggregation framework allows for more complex pipelines than MQL
+$group - an operator that takes the incoming stream of data, and siphons it into multiple distinct reservoirs
+	Syntax: { “$group” : { _id: “$address.country”, <field1>: { <accumulator1> : <expression1> }, …}}
+
+sort() and limit() are cursor methods (like pretty() and count())
+Cursor methods are applied to the result set not the database
+sort() sorts a set of documents based on specified fields (-1 is decreasing, 1 is increasing)
+limit() allows you to specify how many document should be displayed
+Use limit() carefully. Generally don’t use without sort() and make sure to apply after sort()
+MongoDB automatically puts sort() before limit(), even if you mistype
+
+Indexes make queries more efficient and are one of the most impactful ways to improve query performance
+Index (in a book) - an alphabetical list of names, subjects, etc., with references to the places where they occur, typically found at the end of a book.
+Index (in a database) - special data structure that stores a small portion of the collection’s data set in an easy to traverse form.
+createIndex() makes an index based on a specified field(s)
+Compound index, index based on multiple fields
+
+Data modeling - a way to organize fields in a document to support your application performance and querying capabilities.
+Most important rule in MongoDB data modeling: data is stored in the way that it is used.
+Evolving applications require an evolving data model
+
+Everything in MQL that is used to locate a document in a collection can also be used to modify that document.
+Upsert is a hybrid of update and insert, and should only be used when needed.
+Syntax: db.collection.updateOne({<query>}, {<update>}, {“upsert”: true})
+When upsert is set to true, if there is a match for the query, the matched document will be updated, but if there isn’t a match for the query, insert a new document with the specified specifications.
+Be mindful when using upsert

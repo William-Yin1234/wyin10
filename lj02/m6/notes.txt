@@ -1,0 +1,20 @@
+Jason Chan, William Yin, Liam Kronman
+SoftDev
+LJ02 -- MongoDB Chapter 6
+2020-11-22
+
+The Atlas Data Explorer has a tab called Indexes to view and create indexes
+Schema Anti-Patterns tab provides advice after enough queries have been issued on the data collection
+Aggregation tab allows us to build aggregation pipelines
+Pipelines that are built in the Aggregation tab can be exported to programming languages of your choice
+
+An Organization in Atlas is a way to group teams and billing at the highest level
+An Organization can have multiple Projects
+Realm helps you create cross-platform applications that sync to your MongoDB database in real-time
+Dashboard is a way to organize charts in Realm
+You can turn your actions in the Dashboard into an Aggregation Pipeline
+MongoDB Charts - A product that helps you build visualizations of the data stored in your Atlas Cluster.
+
+MongoDB Compass - MongoDB’s Graphical User Interface Product
+Compass consists of tabs including Connection, Documents, Schema, Indexes, Explain, and Validation.
+
