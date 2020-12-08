@@ -1,0 +1,10 @@
+﻿@app.route(“/auth”, methods=[‘GET’, ‘POST’]) is not the same as @app.route(“/auth”)
+When using @app.route(“/auth”, methods=[‘GET’, ‘POST’]), there are two scenarios:
+1. Accessing the /auth branch directly through the query line would be a GET request
+2. Accessing the /auth branch through submission can be POST or GET request (whichever you specify)
+
+
+The key difference between GET and POST is that GET displays the queries in the query line while POST does not.
+
+
+Request.headers contains information on the website and the user
