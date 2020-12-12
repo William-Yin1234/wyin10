@@ -1,0 +1,13 @@
+Team KOCY -- William Yin, Liam Kronman, Jason Chan, Stella Oh
+SoftDev
+K15 -- Sessions Greetings
+2020-12-12
+
+
+app.secret_key is a "password" that allows only authorized sources to view and modify cookie data (source: https://flask.palletsprojects.com/en/1.1.x/api/#sessions).
+
+
+﻿app.secretkey = os.random(32) enables the user to make a session that can store data particular to a user.
+
+
+session.get(ARGUMENT) first checks if the argument exists in the key, and returns it if it does exist. Otherwise it returns NONE
