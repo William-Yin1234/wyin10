@@ -1,0 +1,6 @@
+Team KOCY -- William Yin, Liam Kronman, Jason Chan, Stella Oh
+SoftDev
+K16 -- No Trouble
+2020-12-14
+
+The DictReader() method doesn't return a list but is an object that reads a csv file and returns a dictionary 
