@@ -1,0 +1,64 @@
+/*   yinyangsquad -- William Yin, Alvin Wu
+     SoftDev pd0
+     K18 -- Filler and Finery
+     2021-01-14
+
+   WORK FILE for CSS
+*/
+
+/* Color background. */
+html {
+    background-color: gray;
+}
+
+/* Color body of the page and choose font. */
+body {
+    /* darkgrey is lighter than gray */
+    background-color: darkgrey;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Style title bar. */
+h1 {
+    background-color: gainsboro;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+/* Override default style of a-tag. */
+a {
+    color: white;
+    /* Remove underline. */
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+
+/* Create sidebar. */
+h3, ul {
+    /* Allows me to explicitly shift these elements to their location. */
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    /* Displays these elements inline so that they do not take up an entire row. */
+    display: inline;
+}
+
+/* Shift ul- and h3-tags to approximate location in target_styling.png. */
+ul {
+    /* Remove bullet points. */
+    list-style-type: none;
+    top: 125px;
+    left: 18px;
+}
+h3 {
+    top: 90px;
+    left: 18px;
+}
+
+/* Shift h2- and p-tags right so that they no longer overlap with the sidebar. */
+h2, p {
+    margin-left: 200px;
+}

@@ -14,7 +14,6 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 #==========================================================
 
-
 courses_csv = open("courses.csv")
 students_csv = open("students.csv")
 

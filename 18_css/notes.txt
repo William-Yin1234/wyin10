@@ -1,0 +1,4 @@
+* html tag encompasses the entire screen, while body tag stops where the final element in the body tag stops
+* Padding is empty space inside the element, margin is outside
+* Most elements such as p, h1, and ul are block elements, others such as a, li, and span are inline (source: https://www.w3schools.com/cssref/pr_class_display.asp)
+* Elements have position static by default, position fixed allows the designer to explicitly shift the elements to his or her desired location (source: https://www.w3schools.com/cssref/pr_class_position.asp)
