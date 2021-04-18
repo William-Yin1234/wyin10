@@ -1,0 +1,46 @@
+<!--
+    Team haha -- William Yin, Alvin Wu
+    SoftDev
+    K24 -- Settling in to your DOMicile
+    2021-04-15
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML file for exploring JavaScript interactive with the DOM -->
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    /* Last class as the highest priority. */
+      .red   {color : #ff0000;}
+      .green {color : #00ff00;}
+      .blue  {color : #0000ff;}
+    </style>
+  </head>
+
+  <body>
+    <h1 id="h" class="blue">Hello World!</h1>
+
+    <div id="div1" class="green">This is a div</div>
+    <div id="div2">This is a second div</div>
+    <div class="blue">This is a toid div</div>
+
+    <ol id="thelist">
+      <li class="">item 0</li>
+      <!-- Classes that are explicity defined in the html have higher priority than those that are assigned through javascript. -->
+      <li class="green blue">item 1</li>
+      <li class="green blue">item 2</li>
+      <li class="red green blue">item 3</li>
+      <li class="red green blue">item 4</li>
+      <li class="green blue">item 5</li>
+      <li class="green blue">item 6</li>
+      <li class="">item 7</li>
+    </ol>
+
+    <button id="b">The button</button>
+
+    <script src="dommy_consolery.js"></script>
+
+</body></html>
