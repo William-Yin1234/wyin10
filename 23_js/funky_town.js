@@ -4,7 +4,7 @@
 // 2021-04-15
 // --------------------------------------------------
 
-//CARRY OVER YOUR BEST JS fxns here
+//Recursively returns a factorial.
 let factR = (n) => {
     if (n <= 1) {
         return 1;
@@ -13,6 +13,7 @@ let factR = (n) => {
     return n * factR(n - 1);
 };
 
+//Iteratively returns a factorial
 let factI = (n) => {
     let start = n;
     let fact = 1;
@@ -24,7 +25,7 @@ let factI = (n) => {
     return fact;
 };
 
-
+//Recursively returns the nth term of the fibonacci sequence
 let fibR = (n) => {
     if (n === 1) {
         return 1;
@@ -35,6 +36,7 @@ let fibR = (n) => {
     return fibR(n - 1) + fibR(n - 2);
 };
 
+//Iteratively returns the nth term of the fibonacci sequence
 let fibI = (n) => {
     let counter = 2;
     let n_1 = 1;
@@ -57,7 +59,7 @@ let fibI = (n) => {
 
 //Develop, then implement gcd(a,b), which returns the greatest common divisor of a and b.
 let gcd = (a, b) => {
-    let smaller = (a < b) ? a : b;
+    let smaller = (a < b) ? a : b; //Ternary operator, checks if a < b, if true then return a, else return b
     while (smaller > 1) {
         if (b % smaller == 0 && a % smaller == 0) {
             return smaller;
@@ -69,7 +71,7 @@ let gcd = (a, b) => {
 
 //Develop, then implement randomStudent(), which returns a randomly selected name from a list.
 let randomStudent = (students) => {
-    return students[Math.floor(Math.random() * students.length)];
+    return students[Math.floor(Math.random() * students.length)]; //Uses built in Math.random function.
 };
 
 //You may want to create helper functions or external list variables here.
