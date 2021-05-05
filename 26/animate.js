@@ -60,8 +60,9 @@ var animateCircle = () => {
     if (growing) radius++;
     else radius--;
 
-    requestID = window.requestAnimationFrame(animateCircle);
-    return requestID;
+    let id = window.requestAnimationFrame(animateCircle);
+    requestID = id;
+    return id;
 };
 
 //var stopIt = function() {
