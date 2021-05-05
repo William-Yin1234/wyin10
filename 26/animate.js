@@ -35,10 +35,10 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-    if (requestID === 0) requestID = window.requestAnimationFrame(animateCircle);
+    if (requestID === 0) requestID = animateCircle();
 };
 
-var animateCircle = (timestamp) => {
+var animateCircle = () => {
     // YOUR CODE HERE
     clear()
     ctx.beginPath();
@@ -61,6 +61,7 @@ var animateCircle = (timestamp) => {
     else radius--;
 
     requestID = window.requestAnimationFrame(animateCircle);
+    return requestID;
 };
 
 //var stopIt = function() {
