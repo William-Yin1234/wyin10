@@ -35,7 +35,7 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-    if (requestID === 0) requestID = animateCircle();
+    if (requestID === 0) animateCircle();
 };
 
 var animateCircle = () => {
@@ -60,9 +60,7 @@ var animateCircle = () => {
     if (growing) radius++;
     else radius--;
 
-    let id = window.requestAnimationFrame(animateCircle);
-    requestID = id;
-    return id;
+    requestID = window.requestAnimationFrame(animateCircle);
 };
 
 //var stopIt = function() {
