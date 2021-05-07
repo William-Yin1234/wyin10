@@ -52,7 +52,7 @@ var animateCircle = () => {
     // fill fills in the circle, finishing our shape
     ctx.fill();
 
-    if (radius >= 250) {
+    if (radius >= c.width / 2) {
         growing = false
     } else if (radius <= 0) {
         growing = true;
