@@ -1,0 +1,35 @@
+Team smoothBrain -- William Yin, Jessica Yeung
+SoftDev pd1
+K28 -- Bubble Bubble Toil Trouble
+2021-05-11
+
+
+v1)
+Prediction: Loads up a table. When each item in table is clicked, creates an alert with the text from the table element.
+
+Outcome: Above
+
+
+v2)
+Prediction: Loads up a table. When each item in table is clicked, creates an alert with the text from the table element,
+then creates an alert with all the text from the table row, and finally an alert with the text from the entire table.
+
+Outcome: Above but includes all the html, including the tags
+
+
+v3) Prediction: If e.stopPropagation is uncommented, then the event won't be passed down to the next functions. It would load up a table.
+When each item in table is clicked, creates an alert with the text from the table element. (Same as v1) If it is commented, then it would
+go in the same order as v2.
+
+
+Outcome: When e.stopPropagation is commented, creates an alert for the entire table, then table element, then table row.
+When e.stopPropagation is uncommented, only alerted with text from entire table. The useCapture parameter is set to true,
+which makes the event "bubble up", however the stopPropagation function stops the same event from being called.
+
+
+v4) Prediction: The order should not change from v3 because the event is always called from the outer most element regardless. If
+stopPropagation is uncommented, then only the first alert loads.
+
+
+Outcome: The order does not change if the order of the event listeners are changed. An alert is created for the table, then the row,
+then the single table element. If stopPropagation is uncommented then only the first alert loads.

@@ -1,6 +1,6 @@
 // Team smoothBrain -- William Yin, Jessica Yeung
 // SoftDev pd1
-// K27 -- canvas based JS animation
+// K27 -- Guarding Against Burnout
 // 2021-05-07
 
 // model for HTML5 canvas-based animation
